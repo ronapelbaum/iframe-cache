@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<iframe id="my-frame" frameborder="0"></iframe>
+		<img id="my-img" style="width: 100px;" src="duck.jpeg"/>
+		<img id="my-img2" style="width: 100px;"  src="duck.jpeg"/>
+		
+		<script type="text/javascript">
+			console.log('index.html');
+			var frame = document.getElementById('my-frame'),
+				img = document.getElementById('my-img'),
+				img2 = document.getElementById('my-img2'),
+				rnd = Math.random(),
+				imgSrc = 'https://www.popsci.com/sites/popsci.com/files/images/2017/03/pexels-photo-157465.jpeg';
+			
+			// img.src = imgSrc;
+			// img2.src = imgSrc;
+			frame.src = 'iframe.html';
+		</script>
+	</body>
+</html>
